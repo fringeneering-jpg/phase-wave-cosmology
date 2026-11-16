@@ -45,13 +45,13 @@ This repository houses the complete 136-page master manuscript ([`Phase_Wave_Cos
 
 ## Specialist Briefing Packages ([`briefings/`](./briefings/))
 
-For domain-focused technical review, three self-contained PDF briefings (sliced directly from the locked master PDF with full bibliography and paired verification scripts) are provided in [`briefings/`](./briefings/):
+For domain-focused technical review, three self-contained PDF briefings (dynamically sliced from the locked master PDF with domain falsification tables, full bibliography, `README.md` guides, and paired verification scripts) are provided in [`briefings/`](./briefings/):
 
 | Package Directory | Briefing PDF | Pages | Included Sections | Bundled Verification Scripts |
 | :--- | :--- | :---: | :--- | :--- |
-| [`briefings/01_Quicycle_Subatomic/`](./briefings/01_Quicycle_Subatomic/) | [`PWC_Briefing_01_Subatomic_Quicycle.pdf`](./briefings/01_Quicycle_Subatomic/PWC_Briefing_01_Subatomic_Quicycle.pdf) | 21 | Title/Abstract, Sec 3, Sec 4 (incl. Table 7), References | `pwc_neutron.py`, `proton_electron_ledger.py` |
-| [`briefings/02_McGaugh_Galactic_RAR/`](./briefings/02_McGaugh_Galactic_RAR/) | [`PWC_Briefing_02_Galactic_RAR_and_Wurral.pdf`](./briefings/02_McGaugh_Galactic_RAR/PWC_Briefing_02_Galactic_RAR_and_Wurral.pdf) | 45 | Title/Abstract, Sec 5, Sec 7, References | `run_all_rotation_catalogs_new_a0.py`, `astrodynamic_anomalies_anderson.py` |
-| [`briefings/03_Astrodynamics_Cosmology/`](./briefings/03_Astrodynamics_Cosmology/) | [`PWC_Briefing_03_Astrodynamics_and_Cosmology.pdf`](./briefings/03_Astrodynamics_Cosmology/PWC_Briefing_03_Astrodynamics_and_Cosmology.pdf) | 76 | Title/Abstract, Sec 1, Sec 2, Sec 7, Sec 8 (incl. Table 25), References | `unmask_entropic_gravity_and_dark_energy_kill.py`, `treadmill_49_51.py` |
+| [`briefings/01_Subatomic_Quicycle/`](./briefings/01_Subatomic_Quicycle/) | [`PWC_01_Subatomic_Quicycle.pdf`](./briefings/01_Subatomic_Quicycle/PWC_01_Subatomic_Quicycle.pdf) | 23 | Title/Abstract, Sec 3, Sec 4 (incl. Table 7), Subatomic Falsification (Table 21), Bibliography | `pwc_neutron.py`, `proton_electron_ledger.py`, `topology_equation_corrected.py` |
+| [`briefings/02_McGaugh_Cosmology_Rotation_EOS/`](./briefings/02_McGaugh_Cosmology_Rotation_EOS/) | [`PWC_02_Cosmology_Galactic_RAR_and_EOS.pdf`](./briefings/02_McGaugh_Cosmology_Rotation_EOS/PWC_02_Cosmology_Galactic_RAR_and_EOS.pdf) | 73 | Title/Abstract, Sec 2.1–2.2 (Table 2), Sec 5, Sec 6, Sec 8 (JWST, $\Lambda=0$, Tables 23–25), Bibliography | `run_all_rotation_catalogs_new_a0.py`, `universal_eos.py`, `unmask_entropic_gravity_and_dark_energy_kill.py` |
+| [`briefings/03_Astronomical_Space_Telemetry/`](./briefings/03_Astronomical_Space_Telemetry/) | [`PWC_03_Astronomical_Ephemeris_and_Telemetry.pdf`](./briefings/03_Astronomical_Space_Telemetry/PWC_03_Astronomical_Ephemeris_and_Telemetry.pdf) | 51 | Title/Abstract, Sec 1, Sec 2, Sec 7 (`Wurral` & `Jiba`), Orbital Falsification (Table 22), Bibliography | `astrodynamic_anomalies_anderson.py`, `treadmill_49_51.py` |
 
 ---
 
@@ -84,10 +84,12 @@ python scripts/unmask_entropic_gravity_and_dark_energy_kill.py
 To run the specialist briefing copies (which also print the DOI and companion repository verification ledger):
 
 ```bash
-python briefings/01_Quicycle_Subatomic/pwc_neutron.py
-python briefings/02_McGaugh_Galactic_RAR/astrodynamic_anomalies_anderson.py
-python briefings/03_Astrodynamics_Cosmology/unmask_entropic_gravity_and_dark_energy_kill.py
-python briefings/03_Astrodynamics_Cosmology/treadmill_49_51.py
+python briefings/01_Subatomic_Quicycle/pwc_neutron.py
+python briefings/01_Subatomic_Quicycle/topology_equation_corrected.py
+python briefings/02_McGaugh_Cosmology_Rotation_EOS/universal_eos.py
+python briefings/02_McGaugh_Cosmology_Rotation_EOS/unmask_entropic_gravity_and_dark_energy_kill.py
+python briefings/03_Astronomical_Space_Telemetry/astrodynamic_anomalies_anderson.py
+python briefings/03_Astronomical_Space_Telemetry/treadmill_49_51.py
 ```
 
 *(Note: Catalog-ingestion scripts in `scripts/` that process external astronomical survey tables such as SPARC/PROBES/ALFALFA use `numpy` and `pandas`.)*
@@ -109,9 +111,9 @@ phase-wave-cosmology/
 ├── Phase_Wave_Cosmology_v1.0.pdf   # Locked 136-page master manuscript
 ├── paper_clean.tex                 # Complete LaTeX source (zero margin overflows)
 ├── briefings/                      # 3 domain-specific specialist briefing packages
-│   ├── 01_Quicycle_Subatomic/
-│   ├── 02_McGaugh_Galactic_RAR/
-│   └── 03_Astrodynamics_Cosmology/
+│   ├── 01_Subatomic_Quicycle/
+│   ├── 02_McGaugh_Cosmology_Rotation_EOS/
+│   └── 03_Astronomical_Space_Telemetry/
 ├── scripts/                        # Master archive of Python verification & derivation scripts
 ├── LICENSE                         # GNU AGPLv3 + Commercial Dual License (for all code/scripts)
 ├── LICENSE-PAPER                   # CC BY-SA 4.0 International License (for manuscript/docs)

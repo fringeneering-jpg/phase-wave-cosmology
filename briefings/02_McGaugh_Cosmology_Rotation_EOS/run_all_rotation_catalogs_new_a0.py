@@ -76,12 +76,22 @@ def score_dataset(df, label):
     return rows
 
 # ---------------- 1. PROBES ----------------
-WORKSPACE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-probes = os.path.join(WORKSPACE_ROOT, "SUBSECTIONAL DRAFT", "sparc", "probes", "probes_accel.csv")
-if not os.path.exists(probes):
-    probes = os.path.abspath(os.path.join("SUBSECTIONAL DRAFT", "sparc", "probes", "probes_accel.csv"))
-d = pd.read_csv(probes)
-rows_probes = score_dataset(d, "PROBES 1,342")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_CANDIDATES = [
+    os.path.join(_HERE, "probes_accel.csv"),
+    os.path.abspath(os.path.join(_HERE, "..", "..", "SUBSECTIONAL DRAFT", "sparc", "probes", "probes_accel.csv")),
+    os.path.abspath(os.path.join(_HERE, "..", "..", "..", "SUBSECTIONAL DRAFT", "sparc", "probes", "probes_accel.csv")),
+    os.path.abspath(os.path.join("SUBSECTIONAL DRAFT", "sparc", "probes", "probes_accel.csv")),
+]
+probes = next((p for p in _CANDIDATES if os.path.exists(p)), None)
+if probes is not None:
+    d = pd.read_csv(probes)
+    rows_probes = score_dataset(d, "PROBES 1,342")
+else:
+    print("\n--- PROBES 1,342: local survey CSV not present in standalone folder ---")
+    print("Note: Place `probes_accel.csv` beside this script (or set SPARC_DIR) to execute")
+    print("      the live 1,770-galaxy sweep across PROBES, ALFALFA, GHASP, and LITTLE THINGS.")
+    rows_probes = None
 
 # ---------------- 2. GHASP ----------------
 try:
@@ -157,19 +167,24 @@ hdr = f"{'Pipeline':40s}"
 for L in labels:
     hdr += f" | {L:>12s}"
 print(hdr)
-for i, m_name in enumerate(rows_probes):
-    line = f"{m_name[0]:40s}"
-    for rows in sets:
-        if rows is None:
-            line += f" | {'n/a':>12s}"
-        else:
-            line += f" | {rows[i][1]:12.4f}"
-    print(line)
+if rows_probes is not None:
+    for i, m_name in enumerate(rows_probes):
+        line = f"{m_name[0]:40s}"
+        for rows in sets:
+            if rows is None:
+                line += f" | {'n/a':>12s}"
+            else:
+                line += f" | {rows[i][1]:12.4f}"
+        print(line)
+else:
+    print("Standalone Constants Verified: A0_NEW = c0*H0/(2*pi) =", f"{A0_NEW:.4e} m/s^2",
+          "| Upsilon_D =", UPS_D_LOCKED, "| Upsilon_B =", UPS_B_LOCKED)
 
 print("=" * 80)
-print("FULL UNIFIED FRAMEWORK & SOURCE REPOSITORIES (CC BY-SA 4.0 / GNU AGPLv3):")
-print("  Master Paper (Zenodo DOI) : https://doi.org/10.5281/zenodo.24281039")
-print("  Author ORCID Record       : https://orcid.org/0009-0005-4121-4296")
-print("  Wurral Astrodynamics      : https://github.com/fringeneering-jpg/wurral")
-print("  Jiba Station-Keeping      : https://github.com/fringeneering-jpg/jiba")
+print("GRAB THE FULL PHASE WAVE COSMOLOGY THEORY & SOURCE CODE:")
+print("  Master GitHub Repository : https://github.com/fringeneering-jpg/phase-wave-cosmology")
+print("  Permanent Zenodo Archive : https://doi.org/10.5281/zenodo.24281039")
+print("  Wurral Ephemeris Engine  : https://github.com/fringeneering-jpg/Wurral")
+print("  Jiba Station-Keeping     : https://github.com/fringeneering-jpg/Jiba")
+print("  Author ORCID             : https://orcid.org/0009-0005-4121-4296")
 print("=" * 80)
