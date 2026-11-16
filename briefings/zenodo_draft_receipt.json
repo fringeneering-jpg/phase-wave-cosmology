@@ -1,0 +1,41 @@
+{
+  "deposition_id": 24281039,
+  "reserved_doi": "10.5281/zenodo.24281039",
+  "doi_url": "https://doi.org/10.5281/zenodo.24281039",
+  "draft_review_url": "https://zenodo.org/uploads/24281039",
+  "state": "unsubmitted",
+  "submitted": false,
+  "title": "Die Trägheit eines Körpers ist absolut von seinem Energiegehalt abhängig — Phase Wave Cosmology: A Placeholder-Free Electromagnetic Continuum Framework",
+  "creators": [
+    {
+      "name": "Allison, Jaden John",
+      "affiliation": "Phase Wave Cosmology Collaboration / Fringeneering",
+      "orcid": "0009-0005-4121-4296"
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/fringeneering-jpg/Jiba",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/fringeneering-jpg/Wurral",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "files": [
+    {
+      "filename": "paper_clean.tex",
+      "filesize": 463991,
+      "checksum": "02e8d7ace0bc827868707115bae9ca2a"
+    },
+    {
+      "filename": "Phase_Wave_Cosmology_v1.0.pdf",
+      "filesize": 1802623,
+      "checksum": "7f0d6e995820edbc28ce386eef4a627a"
+    }
+  ]
+}

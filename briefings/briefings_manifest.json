@@ -1,0 +1,32 @@
+[
+  {
+    "folder": "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\01_Quicycle_Subatomic",
+    "pdf_path": "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\01_Quicycle_Subatomic\\PWC_Briefing_01_Subatomic_Quicycle.pdf",
+    "page_count": 21,
+    "source_pages_1based": "1, 31-47, 134-136",
+    "scripts": [
+      "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\01_Quicycle_Subatomic\\pwc_neutron.py",
+      "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\01_Quicycle_Subatomic\\proton_electron_ledger.py"
+    ]
+  },
+  {
+    "folder": "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\02_McGaugh_Galactic_RAR",
+    "pdf_path": "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\02_McGaugh_Galactic_RAR\\PWC_Briefing_02_Galactic_RAR_and_Wurral.pdf",
+    "page_count": 45,
+    "source_pages_1based": "1, 46-71, 80-94, 134-136",
+    "scripts": [
+      "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\02_McGaugh_Galactic_RAR\\run_all_rotation_catalogs_new_a0.py",
+      "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\02_McGaugh_Galactic_RAR\\astrodynamic_anomalies_anderson.py"
+    ]
+  },
+  {
+    "folder": "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\03_Astrodynamics_Cosmology",
+    "pdf_path": "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\03_Astrodynamics_Cosmology\\PWC_Briefing_03_Astrodynamics_and_Cosmology.pdf",
+    "page_count": 76,
+    "source_pages_1based": "1-31, 80-121, 134-136",
+    "scripts": [
+      "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\03_Astrodynamics_Cosmology\\unmask_entropic_gravity_and_dark_energy_kill.py",
+      "c:\\Users\\jaden\\PHYSICS FINAL\\briefings\\03_Astrodynamics_Cosmology\\treadmill_49_51.py"
+    ]
+  }
+]
