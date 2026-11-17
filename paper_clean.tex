@@ -4488,6 +4488,59 @@ Because Jiba constrains 7-day blind orbital position errors to $11.86\text{ m}$,
 Across the commercial fleet, Jiba achieves annual propellant savings ranging from \textbf{$15.2\%$ to $35.0\%$}, extending satellite revenue lifespans by \textbf{$+1.4$ to $+2.2$ years} per asset.
 
 
+\subsection{Pre-Registered Live Blind Falsifiers (v1.1: November 17, 2026)}
+\label{subsec:preregistered_v11_falsifiers}
+
+To subject the locked solar-system continuum equations to prospective, out-of-sample adjudication without adjustable parameters, three pre-registered blind falsifiers are recorded prior to upcoming spacecraft and laboratory readouts:
+
+\subsubsection{Pre-Registered Live Blind Test 1 --- ESA Hera / Dimorphos Bulk Density and Spin-Shape Lock (November 2026)}
+\label{subsubsec:hera_dimorphos_prereg}
+
+Following NASA's DART kinetic impact on Dimorphos~\cite{Daly2023,Thomas2023}, stellar occultation and radar tracking published on March 6, 2026 by Makadia, Chesley et~al.~\cite{Makadia2026} directly measured the heliocentric recoil of the Didymos--Dimorphos binary ($\Delta V_{\text{helio}} = -11.7 \pm 1.3\text{ }\mu\text{m/s}$), pinning the true external momentum enhancement at $\beta_{\text{helio}} = 2.0 \pm 0.3$ and Didymos's primary bulk density at $\rho_{\text{Did}} = 2{,}600 \pm 140\text{ kg/m}^3$ ($R_{\text{eq}} = 394\text{ m}, R_{\text{pol}} = 290\text{ m}$, for which Wurral's bare $Q_{\text{gate}} = 1$ surface spin check yields $T_{\text{sh}} = 2.319\text{--}2.347\text{ h}$ vs.~$2.260\text{ h}$ observed). At normal Didymos silicate rubble density ($\rho_{\text{Dim}} = 2{,}600\text{ kg/m}^3$), a point-mass Newtonian impulse at $\beta_{\text{helio}} = 2.0$ produces only $-17.00\text{ min}$ of binary period reduction---missing $16.24\text{ min}$ of the observed $-33.24\text{ min}$ drop~\cite{Scheirich2024} and forcing standard models to assign Dimorphos an anomalously underdense value of $\rho_{\text{Dim}} = 1{,}540 \pm 220\text{ kg/m}^3$ ($-41\%$ below its parent body).
+
+Evaluating unmodified \url{wurral/wurral/spin_structure.py} (\url{scripts/dart_dimorphos_pwc_audit.py}) across the pre-impact DRACO semi-axes $(88.5, 87.0, 58.0)\text{ m}$~\cite{Daly2023} and post-impact triaxial reshaping ($a/b = 1.30 \pm 0.06, a/c = 1.60$ at conserved volume $\implies (97.57, 75.05, 60.98)\text{ m}$)~\cite{Naidu2024} yields an exact, density-independent three-stage synchronous-lock shift:
+
+\begin{tcolorbox}[colback=gray!4!white,colframe=black!65!white,title={Pre-Registered Blind Ledger 7.1: Zero-Parameter 3-Stage Dimorphos Period-Shift Decomposition}]
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.22}
+\begin{tabularx}{\textwidth}{L{4.3cm} Y R{2.4cm}}
+\toprule
+\textbf{Physical Stage (Zero Free Parameters)} & \textbf{Locked Continuum / Geometric Identity} & \textbf{Period Shift} \\
+\midrule
+\textbf{Stage 1 --- Equatorial Reshaping} & $R_{\text{eq},0} = 87.747\text{ m} \to R_{\text{eq},1} = 85.575\text{ m}$ ($\Omega_{\text{eq}} \propto R_{\text{eq}}^{-3/2} \implies P \propto R_{\text{eq}}^{+3/2}$) & $\mathbf{-26.39\text{ min}}$ \\
+\textbf{Stage 2 --- PWC Flattening Relief} & $f_{r,0} / f_{r,1} = 1.00910 / 1.01704$ (Eq.~\ref{eq:flattening_relief}; subtotal $\mathbf{-31.77\text{ min}}$) & $\mathbf{-5.38\text{ min}}$ \\
+\textbf{Stage 3 --- Mutual $J_2$ Field Overlap} & $K_0 = 1.01602 \to K_1 = 1.01696$ across inward orbital step ($P \propto K(a)^{-2}$) & $\mathbf{-1.20\text{ min}}$ \\
+\midrule
+\textbf{Immediate PWC Total} & Zero adjustable parameters (\url{scripts/dart_dimorphos_pwc_audit.py}) & $\mathbf{-32.97\text{ min}}$ \\
+\textbf{Immediate Observed Step} & Thomas et~al.~(2023, \textit{Nature})~\cite{Thomas2023} immediate post-impact reduction & $-33.0 \pm 1.0\text{ min}$ \\
+\textbf{3-Week Settled Observed} & Scheirich et~al.~(2024, \textit{PSJ})~\cite{Scheirich2024} ($-16.6\text{ s}$ offset matches $-19 \pm 18\text{ s}$ settling) & $-33.24\text{ min}$ \\
+\bottomrule
+\end{tabularx}
+\end{tcolorbox}
+
+\noindent\textbf{Pre-Registered ESA Hera / Juventas Kill-Fork (Timestamped Prior to Nov 25, 2026 Close-Up Release):}
+\begin{itemize}
+    \item \textbf{Standard Newtonian Point-Mass Requirement (at pinned $\beta_{\text{helio}} = 2.0$):} ESA \textit{Hera} radio science and the \textit{Juventas} gravimeter must measure $\rho_{\text{Dim}} = 1{,}540 \pm 220\text{ kg/m}^3$ ($-41\%$ underdense relative to Didymos) with spin decoupled from the orbit; confirmation falsifies the PWC synchronous spin-shape lock.
+    \item \textbf{PWC Spin-Shape Lock Prediction:} $\rho_{\text{Dim}} \ge 2{,}100\text{--}2{,}500\text{ kg/m}^3$ (normal Didymos silicate rubble density), where Newtonian $\beta_{\text{helio}} = 2.0$ recoil misses $13\text{--}16\text{ min}$ of the $-33.24\text{ min}$ drop and classical spin-damping pushes the opposite sign ($+285.0\text{ s}$).
+    \item \textbf{Honest Caveat Logged:} Ground lightcurves~\cite{Pravec2024} indicate post-impact non-principal-axis tumbling; \textit{Hera}'s direct spin-pole and mass readout adjudicates both bulk density and spin-lock state cleanly with zero free knobs.
+\end{itemize}
+
+\subsubsection{Pre-Registered Live Blind Test 2 --- 2028--2034 Mars--Saturn Unpinned DSN Two-Way Range and Spin-Recovery Ladder (ESCAPADE / MRO / TGO)}
+\label{subsubsec:mars_saturn_prereg}
+
+Prior to registering interplanetary Mars--Saturn radio-science predictions, archival InSight SEIS Marsquake Service V14 seismicity ($1{,}033$ dusk/night tectonic events) was forensically audited against the $733.83\text{-day}$ Mars--Saturn synodic cycle and explicitly \textbf{falsified} ($p = 0.80\text{--}0.95$ under $10{,}000$ circular time-shift permutations after Mars seasonal $L_s$ regression; largest event \texttt{S1222a} occurred pre-conjunction at $\Delta\lambda_{\text{MS}} = -12.18^\circ$, and the post-conjunction $[0^\circ, +60^\circ]$ arc coincided with a southern-summer dust-storm SEIS quiet-window blackout). With lithospheric Mars seismicity cleanly retired, the pure unpinned two-way DSN radio-range and spin-recovery signature is pre-registered for NASA \texttt{ESCAPADE}, \texttt{MRO}, and ESA \texttt{TGO} across the 2028--2034 synodic ladder:
+\begin{enumerate}
+    \item \textbf{2028 Pass Phase Landmarks:} Peak off-axis continuum swirl outward lift on \textbf{2028-01-19} ($\Delta\lambda_{\text{MS}} = -65.5^\circ$); antisymmetric zero-crossing near heliocentric conjunction on \textbf{2028-05-10} (minimum 3D separation $\mathbf{7.840\text{ AU}}$ on \textbf{2028-05-18}); peak inward departure push on \textbf{2028-09-22} ($\Delta\lambda_{\text{MS}} = +66.5^\circ$); followed by elastic spin-rate recovery past $\Delta\lambda_{\text{MS}} > +90^\circ$.
+    \item \textbf{Mandatory Multi-Cycle Distance Strengthening:} Because Mars--Saturn conjunctions climb toward Mars aphelion and Saturn perihelion over the coming decade, the unpinned range-residual amplitude must strengthen monotonically across \textbf{2030 ($\mathbf{7.630\text{ AU}}$)}, \textbf{2032 ($\mathbf{7.498\text{ AU}}$)}, and \textbf{2034 ($\mathbf{7.478\text{ AU}}$)}. Absence of this antisymmetric dipole and monotonic amplitude ladder in unpinned DSN two-way range residuals falsifies outer-planet cross-wake coupling.
+\end{enumerate}
+
+\subsubsection{Pre-Registered Benchtop Laboratory Falsifier --- Cold Tunnel-Ionization Endothermic Untying Trough}
+\label{subsubsec:benchtop_untying_prereg}
+
+By the transport axiom \textbf{``heat hates pressure''} ($\mathbf{u}_{\text{heat}} = -(\kappa/\rho)\nabla P$) and the $3\times$ reach equipartition volume ($q_{\text{eff}} \approx 2.5 \times 10^{17}\text{ J/kg}$ for heavy atomic knots), bypassing thermal combustion via non-thermal optical-field tunnel ionization ($\le 100\text{ fs}$ pulsed laser at $I_0 \sim 10^{15}\text{--}10^{16}\text{ W/cm}^2$ grazing a sacrificial dense tungsten wire or tape inside a $0.1\text{--}10\text{ mTorr}$ vacuum chamber) creates an asymmetric, medium-speed-limited decompression sheet ($C(\rho)$ cliff at the solid wall). Placing a $0.5\text{ T}$ magnetically shielded carbon-carbon calorimeter strip (deflecting $100\text{--}300\text{ eV}$ ballistic ions within a $r_L \le 11.3\text{ mm}$ Larmor curtain) at a **$2\text{--}10\text{ cm}$ standoff** pre-registers a stark laboratory kill-fork: classical electrodynamics predicts strictly positive radiative/scattered heating ($\Delta T > 0$), whereas PWC predicts net endothermic phonon extraction ($\Delta T < 0$) into the low-pressure untying trough.
+
+
 \subsection{Inline Python Script Citations and Verification Suite}
 \label{subsec:inline_script_citations}
 
@@ -4522,6 +4575,7 @@ The mathematical derivations, numerical integrations, and empirical benchmark co
 \textbf{Script Repository:} \texttt{scripts/}
 \begin{itemize}
     \item \textbf{Anderson Astrodynamic Anomalies Suite:} \url{scripts/astrodynamic_anomalies_anderson.py} (Verifies the 5 historical anomalies: AU drift $14.88\text{ cm/yr}$, Pioneer acceleration $8.93 \times 10^{-10}\text{ m/s}^2$, Ulysses acceleration $1.191 \times 10^{-9}\text{ m/s}^2$, 'Oumuamua non-gravitational acceleration $5.04 \times 10^{-6}\text{ m/s}^2$, and saddle point ambient floor $6.61 \times 10^{-11}\text{ m/s}^2$)
+    \item \textbf{Pre-Registered DART / ESA Hera Spin-Shape Audit:} \url{scripts/dart_dimorphos_pwc_audit.py} (Verifies the zero-parameter 3-stage Dimorphos period shift $-32.97\text{ min}$, delayed $-16.6\text{ s}$ rubble settling, and the $\rho_{\text{Dim}} \ge 2{,}100\text{--}2{,}500\text{ kg/m}^3$ vs.~$1{,}540\text{ kg/m}^3$ blind kill-fork prior to ESA \textit{Hera} / \textit{Juventas} readout)
 \end{itemize}
 All scripts execute deterministically with zero free parameters, reproducing the reported telemetry residuals, 50-year unpinned trajectories, and satellite station-keeping benchmarks with exit code 0.
 \end{tcolorbox}
@@ -5565,6 +5619,12 @@ The orbital and solar system predictions are detailed in Table~\ref{tab:predicti
 & Eruption Law & $\zeta \to \zeta_{\text{yield}} = 3.84 \times 10^4$ & or $\Pi_V > 1$ with $\zeta \ll \zeta_{\text{yield}}$ & AIA EUV (AR 12192) & & (pre-registration) \\
 18 & Solar Photosphere & $T_{\text{surf}} = 5,770.8\text{ K}$ from & Tying transition cannot produce & Solar bolometric & \textbf{true} & VERIFIED \\
 & Temperature Pin & bolometric flux $L_{\text{bol}} = 3.828 \times 10^{26}\text{ W}$ & $5,772\text{ K}$ from locked constants & monitoring ($-0.02\%$) & & (\url{scripts/stage3_surface_phase_shift.py}) \\
+18a & ESA Hera / & 3-stage lock $\Delta P = \mathbf{-32.97\text{ min}}$; & \textit{Hera}/\textit{Juventas} measures & ESA \textit{Hera} + \textit{Juventas} & \textbf{armed} & PRE-REG \\
+& Dimorphos Density & $\rho_{\text{Dim}} \ge \mathbf{2{,}100\text{--}2{,}500\text{ kg/m}^3}$ & $\rho_{\text{Dim}} \approx 1{,}540\text{ kg/m}^3$ w/ free spin & radio/gravity (Nov 2026) & & (\url{scripts/dart_dimorphos_pwc_audit.py}) \\
+18b & 2028--2034 Mars-- & Lift \texttt{2028-01-19}, node \texttt{05-10}, push & No antisymmetric DSN range dipole & \texttt{ESCAPADE} / \texttt{MRO} / \texttt{TGO} & \textbf{armed} & PRE-REG \\
+& Saturn DSN Ladder & \texttt{09-22}; grows $7.84 \to 7.48\text{ AU}$ & or no 2030/2032/2034 growth & (SEIS quakes falsified, $p>0.8$) & & (2026-11-17) \\
+18c & Femtosecond & $100\text{ fs}$ W wire at $2\text{--}10\text{ cm}$ ($0.5\text{ T}$ & Strictly positive heating $\Delta T > 0$ & Benchtop $0.1\text{--}10\text{ mTorr}$ & \textbf{armed} & PRE-REG \\
+& Untying Trough & shield): $\Delta T < 0$ ($q_{\text{eff}} \sim 2.5 \times 10^{17}\text{ J/kg}$) & on shielded C--C strip & vacuum calorimeter & & (2026-11-17) \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -5678,6 +5738,7 @@ A complete index of the executable Python verification scripts supporting the co
 \url{scripts/stage4_void_sz_profile.py} & Void SZ Profile & Evaluates 1,163 Douglass+ voids for the $y_{\text{wall}}/y_{\text{void}} = 19/18 = 1.0556$ step-function contrast. \\
 \url{scripts/birefringence_void_map.py} & CMB Polarization & Generates 1,163-void template for direction-dependent CMB birefringence, predicting peak amplitude $\sim 0.177^\circ$ in corridor RA 142--150$^\circ$, Dec +31--46$^\circ$. \\
 \url{scripts/Deploy_Falsification.py} & Subatomic & Verifies raw instrument log parsers for NIST NG-5 beam negative slope ($5.19\sigma$) and UCNtau bottle positive slope ($3.46\sigma$). \\
+\url{scripts/dart_dimorphos_pwc_audit.py} & Astrodynamics & Pre-registered zero-parameter DART / Dimorphos 3-stage period reduction ($-26.39 - 5.38 - 1.20 = -32.97\text{ min}$) and ESA \textit{Hera} / \textit{Juventas} bulk-density kill-fork ($\rho_{\text{Dim}} \ge 2{,}100\text{--}2{,}500\text{ kg/m}^3$ vs.~$1{,}540\text{ kg/m}^3$). \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -6607,6 +6668,24 @@ N.~Aghanim et~al. (Planck Collaboration), ``Planck 2018 results. VI. Cosmologica
 
 \bibitem{Spite1982}
 M.~Spite and F.~Spite, ``Abundance of lithium in unevolved halo stars and old disk stars: Interpretation and consequences,'' \textit{Astronomy and Astrophysics}, vol.~115, no.~2, pp.~357--366, 1982.
+
+\bibitem{Daly2023}
+R.~T.~Daly, C.~M.~Ernst, O.~S.~Barnouin, et~al., ``Successful kinetic impact into an asteroid for planetary defence,'' \textit{Nature}, vol.~616, pp.~443--447, 2023.
+
+\bibitem{Thomas2023}
+C.~A.~Thomas, S.~P.~Naidu, P.~Scheirich, et~al., ``Orbital period change of Dimorphos due to the DART kinetic impact,'' \textit{Nature}, vol.~616, pp.~448--451, 2023.
+
+\bibitem{Scheirich2024}
+P.~Scheirich, P.~Pravec, B.~Meyer, et~al., ``Dimorphos orbit determination from mutual events photometry,'' \textit{The Planetary Science Journal}, vol.~5, no.~1, p.~17, 2024.
+
+\bibitem{Naidu2024}
+S.~P.~Naidu, S.~R.~Chesley, D.~Farnocchia, et~al., ``Orbital and physical characterization of asteroid Dimorphos following the DART impact,'' \textit{The Planetary Science Journal}, vol.~5, no.~3, p.~74, 2024.
+
+\bibitem{Pravec2024}
+P.~Pravec, P.~Scheirich, J.~{\v{D}}urech, et~al., ``Rotational lightcurves of Dimorphos and constraints on its post-DART impact spin state,'' \textit{Icarus}, vol.~418, p.~116138, 2024.
+
+\bibitem{Makadia2026}
+R.~Makadia, S.~R.~Chesley, D.~Herald, D.~Farnocchia, et~al., ``Direct detection of an asteroid's heliocentric deflection: The Didymos system after DART,'' \textit{Science Advances}, vol.~12, no.~10, p.~eaea4259, Mar.~6, 2026.
 
 \end{thebibliography}
 

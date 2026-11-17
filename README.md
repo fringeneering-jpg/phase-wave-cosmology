@@ -18,7 +18,7 @@
 
 ## Overview
 
-This repository houses the complete 136-page master manuscript ([`Phase_Wave_Cosmology_v1.0.pdf`](./Phase_Wave_Cosmology_v1.0.pdf)), full LaTeX source ([`paper_clean.tex`](./paper_clean.tex)), three domain-specific specialist briefing packages ([`briefings/`](./briefings/)), and the complete suite of zero-free-parameter Python verification scripts ([`scripts/`](./scripts/)).
+This repository houses the complete 139-page master manuscript ([`Phase_Wave_Cosmology_v1.1.pdf`](./Phase_Wave_Cosmology_v1.1.pdf)), full LaTeX source ([`paper_clean.tex`](./paper_clean.tex)), three domain-specific specialist briefing packages ([`briefings/`](./briefings/)), and the complete suite of zero-free-parameter Python verification scripts ([`scripts/`](./scripts/)).
 
 **Phase Wave Cosmology (PWC)** substantiates physical space as a continuous, compressible electromagnetic plenum governed by the operational principles that **"PRESSURE, GEOMETRY AND DENSITY AFFECT ENERGY"** and **"heat hates pressure"**, enacting the ontological restoration $m = L/c_0^2$ (radiation energy as primary baseline; inertial mass as confined wave energy) across 41 orders of magnitude without dark matter halos, dark energy ($\Lambda \equiv 0$), point particles, or central singularities:
 
@@ -30,15 +30,15 @@ This repository houses the complete 136-page master manuscript ([`Phase_Wave_Cos
 | Universal Cosmic Untying Rate | $H_0 = \frac{\rho_0 c_0}{\rho_{\max} R_p}$ | $2.39607 \times 10^{-18}\text{ s}^{-1}$ ($73.935\text{ km/s/Mpc}$) |
 | Terminal Galactic Acceleration Floor | $a_0 = \frac{c_0 H_0}{2\pi}$ | $1.1432 \times 10^{-10}\text{ m/s}^2$ |
 
-### Manuscript Architecture (136 Pages)
+### Manuscript Architecture (139 Pages — v1.1)
 1. **Section 1 — Albert Einstein:** Mass-energy continuum ($m = L/c_0^2$), the 1920 Leiden ether address, expanding-track $49/51$ round-trip light-time split, Viking 1/2 dual-transponder range biases, and the JWST high-$z$ assembly window (`JADES-GS-z14-0`: $2,004.6\text{ Myr}$, $6.91\times \Lambda\text{CDM}$).
 2. **Section 2 — Dr. John D. Anderson:** The Master Equation of State ($H(r) = H_0\sqrt{1 - r_s/r}$), Eisenhart metric lift, unmasking ephemeris-absorbed expansion in $GM$, resolution of the 5 solar-system anomalies (AU drift, Pioneer 10/11, Ulysses polar chimney, `'Oumuamua`, Lagrange saddle floor), and 5/5 Earth flyby jump closures.
 3. **Section 3 — Lord Ernest Rutherford:** Continuous subatomic mechanics, real-space neutron doublet closure ($+0.78233\text{ MeV}$ split, $\mu_n$, beam-vs-bottle lifetime resolution), Penning trap cyclotron clock-rate bias ($+1.0817\text{ MeV}$ surface dress, $169/170$ internal seam relief), and the light-nuclei weld ladder ($Q_{\text{weld}} = 91.8462\text{ keV}$).
 4. **Section 4 — Dr. John Williamson & Quicycle Mechanics:** The electron as a $720^\circ$ toroidal chiral knot ($19:1:18$ force balance), sealed 5-knot $2\text{-}1\text{-}2$ proton cage ($m_p R_p c_0 = 4\hbar$, $R_p = 0.8422\text{ fm}$), and the closed-form subatomic ledger (Table 7).
 5. **Section 5 — Stacy McGaugh & Mordehai Milgrom:** Zero-fit derivation of $a_0 = c_0 H_0 / (2\pi)$, $+24.313\%$ phonon decompression bloom, 4-for-4 out-of-sample galactic rotation sweep across 1,770 galaxies (`PROBES`, `ALFALFA`, `GHASP`, `LITTLE THINGS`) retiring 5 standard fitting parameters, Bullet Cluster bow-shock & lensing closure, and singularity-free black hole shells (`GW150914` $3.0\,M_\odot$ yield & 16-fold ringdown).
 6. **Section 6 — Maxwell, Faraday, Riemann, Aristotle:** Physical electromagnetic medium mechanics, proof of Aristotle's void limit, exact $3 \times (1/3) = 1$ hydrostatic gravitational redshift cancellation, and constitutive 2-anchor polytrope Equation of State.
-7. **Section 7 — Empirical Software & Telemetry Engines:** Full benchmarking of [**Wurral**](https://github.com/fringeneering-jpg/wurral) (1978–2026 planetary & Cassini range telemetry) and [**Jiba**](https://github.com/fringeneering-jpg/jiba) (thrusterless LEO/MEO station-keeping across 6 ILRS geodetic satellites).
-8. **Section 8 — Cosmology, Gapless Continuum Axioms & Empirical Predictions:** Seven Gapless Physical Laws, Navier–Stokes regularity and Yang–Mills mass gap bounds, Type Ia supernova deceleration parameter $q_0 = -9/19 = -0.4737$ ($\Lambda \equiv 0$, DES 5-Year $0.27\sigma$ match), $^7\text{Li}$ Spite plateau closure, and the 23-test Master Falsification Matrix.
+7. **Section 7 — Empirical Software, Telemetry Engines & Pre-Registered v1.1 Blind Falsifiers:** Full benchmarking of [**Wurral**](https://github.com/fringeneering-jpg/wurral) (1978–2026 planetary & Cassini range telemetry) and [**Jiba**](https://github.com/fringeneering-jpg/jiba) (thrusterless LEO/MEO station-keeping across 6 ILRS geodetic satellites), plus v1.1 pre-registered blind falsifiers (ESA *Hera* / Dimorphos 3-stage $-32.97\text{ min}$ period lock & bulk-density fork prior to Nov 25, 2026 release; 2028–2034 Mars–Saturn unpinned DSN range dipole ladder; $100\text{ fs}$ benchtop endothermic untying trough).
+8. **Section 8 — Cosmology, Gapless Continuum Axioms & Empirical Predictions:** Seven Gapless Physical Laws, Navier–Stokes regularity and Yang–Mills mass gap bounds, Type Ia supernova deceleration parameter $q_0 = -9/19 = -0.4737$ ($\Lambda \equiv 0$, DES 5-Year $0.27\sigma$ match), $^7\text{Li}$ Spite plateau closure, and the Master Falsification Matrix (incl. pre-registered rows 18a–18c).
 9. **Section 9 — Appendix:** Standalone Python 3 Standard Library verification suite.
 
 ---
@@ -51,7 +51,7 @@ For domain-focused technical review, three self-contained PDF briefings (dynamic
 | :--- | :--- | :---: | :--- | :--- |
 | [`briefings/01_Subatomic_Quicycle/`](./briefings/01_Subatomic_Quicycle/) | [`PWC_01_Subatomic_Quicycle.pdf`](./briefings/01_Subatomic_Quicycle/PWC_01_Subatomic_Quicycle.pdf) | 23 | Title/Abstract, Sec 3, Sec 4 (incl. Table 7), Subatomic Falsification (Table 21), Bibliography | `pwc_neutron.py`, `proton_electron_ledger.py`, `topology_equation_corrected.py` |
 | [`briefings/02_McGaugh_Cosmology_Rotation_EOS/`](./briefings/02_McGaugh_Cosmology_Rotation_EOS/) | [`PWC_02_Cosmology_Galactic_RAR_and_EOS.pdf`](./briefings/02_McGaugh_Cosmology_Rotation_EOS/PWC_02_Cosmology_Galactic_RAR_and_EOS.pdf) | 73 | Title/Abstract, Sec 2.1–2.2 (Table 2), Sec 5, Sec 6, Sec 8 (JWST, $\Lambda=0$, Tables 23–25), Bibliography | `run_all_rotation_catalogs_new_a0.py`, `universal_eos.py`, `unmask_entropic_gravity_and_dark_energy_kill.py` |
-| [`briefings/03_Astronomical_Space_Telemetry/`](./briefings/03_Astronomical_Space_Telemetry/) | [`PWC_03_Astronomical_Ephemeris_and_Telemetry.pdf`](./briefings/03_Astronomical_Space_Telemetry/PWC_03_Astronomical_Ephemeris_and_Telemetry.pdf) | 51 | Title/Abstract, Sec 1, Sec 2, Sec 7 (`Wurral` & `Jiba`), Orbital Falsification (Table 22), Bibliography | `astrodynamic_anomalies_anderson.py`, `treadmill_49_51.py` |
+| [`briefings/03_Astronomical_Space_Telemetry/`](./briefings/03_Astronomical_Space_Telemetry/) | [`PWC_03_Astronomical_Ephemeris_and_Telemetry.pdf`](./briefings/03_Astronomical_Space_Telemetry/PWC_03_Astronomical_Ephemeris_and_Telemetry.pdf) | 54 | Title/Abstract, Sec 1, Sec 2, Sec 7 (`Wurral`, `Jiba` & v1.1 Blind Falsifiers), Orbital Falsification (Table 22), Bibliography | `astrodynamic_anomalies_anderson.py`, `treadmill_49_51.py`, `dart_dimorphos_pwc_audit.py` |
 
 ---
 
@@ -77,6 +77,9 @@ python scripts/sixteen_fold_grind_check.py
 python scripts/universal_eos.py
 python scripts/heat_hates_pressure.py
 
+# Section 7 (v1.1 Pre-Registered Blind Audit): DART / Dimorphos & ESA Hera density fork
+python scripts/dart_dimorphos_pwc_audit.py
+
 # Section 8: Unmasking entropic gravity, q0 = -9/19 & Dark Energy elimination (Lambda = 0)
 python scripts/unmask_entropic_gravity_and_dark_energy_kill.py
 ```
@@ -90,12 +93,13 @@ python briefings/02_McGaugh_Cosmology_Rotation_EOS/universal_eos.py
 python briefings/02_McGaugh_Cosmology_Rotation_EOS/unmask_entropic_gravity_and_dark_energy_kill.py
 python briefings/03_Astronomical_Space_Telemetry/astrodynamic_anomalies_anderson.py
 python briefings/03_Astronomical_Space_Telemetry/treadmill_49_51.py
+python briefings/03_Astronomical_Space_Telemetry/dart_dimorphos_pwc_audit.py
 ```
 
 *(Note: Catalog-ingestion scripts in `scripts/` that process external astronomical survey tables such as SPARC/PROBES/ALFALFA use `numpy` and `pandas`.)*
 
 ### Recompiling the LaTeX Manuscript
-To build [`Phase_Wave_Cosmology_v1.0.pdf`](./Phase_Wave_Cosmology_v1.0.pdf) from [`paper_clean.tex`](./paper_clean.tex) using TeX Live or MiKTeX:
+To build [`Phase_Wave_Cosmology_v1.1.pdf`](./Phase_Wave_Cosmology_v1.1.pdf) from [`paper_clean.tex`](./paper_clean.tex) using TeX Live or MiKTeX:
 
 ```bash
 pdflatex -interaction=nonstopmode -file-line-error paper_clean.tex
@@ -108,7 +112,7 @@ pdflatex -interaction=nonstopmode -file-line-error paper_clean.tex
 
 ```text
 phase-wave-cosmology/
-├── Phase_Wave_Cosmology_v1.0.pdf   # Locked 136-page master manuscript
+├── Phase_Wave_Cosmology_v1.1.pdf   # Locked 139-page master manuscript (v1.1)
 ├── paper_clean.tex                 # Complete LaTeX source (zero margin overflows)
 ├── briefings/                      # 3 domain-specific specialist briefing packages
 │   ├── 01_Subatomic_Quicycle/
@@ -127,7 +131,7 @@ phase-wave-cosmology/
 This repository is distributed under a strict split license separating the scientific text from executable software and simulation code:
 
 1. **Manuscript, Specialist Briefings & Documentation ([`LICENSE-PAPER`](./LICENSE-PAPER)):**  
-   `Phase_Wave_Cosmology_v1.0.pdf`, `paper_clean.tex`, `briefings/**/*.pdf`, and `README.md` are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.
+   `Phase_Wave_Cosmology_v1.1.pdf`, `paper_clean.tex`, `briefings/**/*.pdf`, and `README.md` are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.
 2. **Verification Scripts & Simulation Engines ([`LICENSE`](./LICENSE)):**  
    All Python scripts (`scripts/**/*.py`, `briefings/**/*.py`) and companion simulation engines ([Wurral](https://github.com/fringeneering-jpg/wurral) and [Jiba](https://github.com/fringeneering-jpg/jiba)) are dual-licensed under the **GNU Affero General Public License v3.0 (GNU AGPLv3)** for open-source/academic research and a separate **Fringeneering Commercial License** for closed-source, proprietary aerospace, satellite constellation, or operational telemetry deployment. Commercial inquiries: `fringeneering@gmail.com`.
 
